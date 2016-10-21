@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+                name="viewModel"
+                type="com.hotbitmapgg.rxzhihu.viewmodel.EntryViewModel"/>
+        <variable
+                name="launchImageBean"
+                type="com.hotbitmapgg.rxzhihu.model.LaunchImageBean"/>
+    </data>
+    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true">
+        <ImageView
+                android:id="@+id/iv_luanch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:imageUrl="@{launchImageBean.img}"
+                android:scaleType="fitXY"/>
+
+
+        <TextView
+                android:id="@+id/tv_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:gravity="center"
+                android:text="@{launchImageBean.text}"
+                android:textColor="@android:color/white"/>
+    </RelativeLayout>
+</layout>

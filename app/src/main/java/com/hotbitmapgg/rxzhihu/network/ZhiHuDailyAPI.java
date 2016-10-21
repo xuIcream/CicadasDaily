@@ -8,7 +8,7 @@ import com.hotbitmapgg.rxzhihu.model.DailyRecommend;
 import com.hotbitmapgg.rxzhihu.model.DailySections;
 import com.hotbitmapgg.rxzhihu.model.DailyTypeBean;
 import com.hotbitmapgg.rxzhihu.model.HotNews;
-import com.hotbitmapgg.rxzhihu.model.LuanchImageBean;
+import com.hotbitmapgg.rxzhihu.model.LaunchImageBean;
 import com.hotbitmapgg.rxzhihu.model.SectionsDetails;
 import com.hotbitmapgg.rxzhihu.model.ThemesDetails;
 
@@ -60,7 +60,7 @@ public interface ZhiHuDailyAPI
      * @return
      */
     @GET("start-image/{res}")
-    Observable<LuanchImageBean> getLuanchImage(@Path("res") String res);
+    Observable<LaunchImageBean> getLuanchImage(@Path("res") String res);
 
     /**
      * 获取专题日报

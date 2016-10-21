@@ -7,7 +7,7 @@ import com.hotbitmapgg.rxzhihu.model.DailyListBean;
 import com.hotbitmapgg.rxzhihu.model.DailyComment;
 import com.hotbitmapgg.rxzhihu.model.DailyRecommend;
 import com.hotbitmapgg.rxzhihu.model.DailyTypeBean;
-import com.hotbitmapgg.rxzhihu.model.LuanchImageBean;
+import com.hotbitmapgg.rxzhihu.model.LaunchImageBean;
 import com.hotbitmapgg.rxzhihu.model.ThemesDetails;
 import com.hotbitmapgg.rxzhihu.utils.NetWorkUtil;
 
@@ -159,7 +159,7 @@ public class RetrofitHelper
         return mZhiHuApi.getNewsDetails(id);
     }
 
-    public Observable<LuanchImageBean> getLuanchImage(String res)
+    public Observable<LaunchImageBean> getLuanchImage(String res)
     {
 
         return mZhiHuApi.getLuanchImage(res);
